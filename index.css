@@ -2,8 +2,8 @@
   --project-blue-color: #3491b2;
   --project-darkerblue-color: #2b7996;
   --project-grey-color: #9d9d9d;
-  --project-lightgrey-color: #bbb8b8; 
-  --project-lightergrey-color: #e5e5e5; 
+  --project-lightgrey-color: #e5e5e5;
+  --project-lightergrey-color: #e5e5e5;
   --project-darkergrey-color: #696d72;
 }
 
@@ -36,7 +36,7 @@ body {
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 0.\drem;
   color: var(--project-darkergrey-color);
 }
 
@@ -89,7 +89,7 @@ nav li {
 }
 
 nav a {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   color: var(--project-grey-color);
   padding-top: 20px;
   padding-bottom: 3px;
@@ -136,14 +136,14 @@ nav a:hover {
   border-radius: 5px;
   margin-top: 20px;
   font-family: "RobotoBold", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: white;
   text-decoration: none;
 }
 
 .slidertext p {
   color: white;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 
 .bluebar {
@@ -164,7 +164,7 @@ nav a:hover {
   top: 60%;
   left: 0;
   color: white;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -176,7 +176,7 @@ nav a:hover {
   top: 60%;
   right: 0;
   color: white;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -185,18 +185,20 @@ nav a:hover {
 
 .fa-chevron-left:hover,
 .fa-chevron-right:hover {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
-/* ---keframes du slider--- */
+/* ---keyframes du slider--- */
 
 @keyframes slides {
   0% {
     left: 0%;
   }
+
   50% {
     left: -100%;
   }
+
   100% {
     left: 0%;
   }
@@ -206,9 +208,11 @@ nav a:hover {
   0% {
     width: 0%;
   }
+
   50% {
     width: 100%;
   }
+
   100% {
     width: 0%;
   }
@@ -216,34 +220,41 @@ nav a:hover {
 
 /* les services commencent ici */
 
+hr {
+  display: inline-block;
+  width: 15%;
+  color: var(--project-lightgrey-color);
+}
+
 #services {
-  margin-top: 150px;
+  margin-top: 0px;
   padding-top: 100px;
   padding-bottom: 150px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#services_list {
+  display: flex;
   align-items: center;
 }
 
 #services h2 {
   width: 30%;
-  /* border-style: double; */
+
   text-align: center;
 }
 
-hr {
-  display: inline-block;
-  width: 15%;
-  height: 0;
-}
-
 .fa-circle {
-  background-color: white;
   position: relative;
-  top: -21px;
   color: var(--project-blue-color);
-  padding: 4px;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+  top: -20px;
+  left: 0px;
 }
 
 #services_list ul {
@@ -273,23 +284,19 @@ hr {
 .fa-cubes,
 .fa-chart-pie {
   position: relative;
-  top: 80px;
+  top: 76px;
   left: -75px;
-  border: 1px solid grey;
+  border: 1px solid var(--project-lightgrey-color);
   border-radius: 50%;
   padding: 12px 11px 12px 13px;
   color: var(--project-blue-color);
-  font-size: 2em;
+  font-size: 1.8rem;
 }
 
-li .fa-circle {
+#services_list .fa-circle {
   background-color: white;
-  position: relative;
-  font-size: 0.8em;
   top: 75px;
-  left: -90px;
-  border-radius: 50%;
-  padding: 3px;
+  left: -93px;
 }
 
 /* les services finnissent ici */
@@ -297,7 +304,7 @@ li .fa-circle {
 /* les projets commencent ici */
 
 #projects {
-  margin-top: 250px;
+  margin-top: 2050px;
   padding-top: 110px;
   align-items: center;
   display: flex;
@@ -306,7 +313,7 @@ li .fa-circle {
 }
 
 #projects p {
-  width: 50%;
+  max-width: 50%;
   text-align: center;
 }
 
@@ -373,57 +380,64 @@ li .fa-circle {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center  ;
-  margin:0;
-  padding:0px;
+  justify-content: center;
+  margin: 0;
+  padding: 0px;
+  max-width: 1250px;
 }
 
-.projectdisplay li {
-  position: relative;  
-
-  width:22%;
-  
-  border: 1px green dotted;
-  margin: 5px;
-
-  
-}
- 
 .projectdisplay li figure {
-  margin:0;
-
   position: relative;
-   border: 1px rgb(172, 16, 164) dotted;
-
-object-fit: contain;
-
-} 
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 14px;
+}
 
 .projectdisplay img {
-justify-items: left;
-  width:200px;
-  
+  width: 250px;
+  object-fit: scale-down;
 }
-
-/* object-fit: scale-down}  */
-
-/* .projectdisplay figcaption{
-  opacity:0;
-} */
 
 .projectdisplay li figcaption {
-  position: absolute; 
-  display: flex;
-  flex-direction: column;
-  color: white;
-  top: -10px;
-  left: 5px;
-  height: 50% ;
-  padding-left: 2px;
-  width: 80%;
-  border: 2px red dotted;
+  position: absolute;
   opacity: 1;
+  justify-content: center;
+  color: white;
+  height: 30%;
+  width: 100%;
+  top: 70%;
+  left: 0px;
+  height: 30%;
+  background: var(--project-blue-color);
+
 }
+
+.projectdisplay li figcaption span {
+  font-weight: 900;
+}
+
+.projectdisplay li figure {
+  position: relative;
+
+}
+
+fa-eye {
+  display: flex;
+  position: absolute;
+  top: 80%;
+  left: 0px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding: 12px 11px 12px 13px;
+  color: var(--project-grey-color);
+  z-index: 2;
+}
+
+/* 
+
+.projectdisplay li:hover figcaption {
+  opacity: 1;
+} */
 
 /* les projets finnissent ici */
 
@@ -440,7 +454,7 @@ justify-items: left;
 iframe {
   width: 100%;
   height: 600px;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .iframe {
@@ -448,16 +462,8 @@ iframe {
   padding-top: 0px;
   width: 100%;
   height: 600px;
-  opacity: 0.6;
+  opacity: 0.9;
   background-color: var(--project-blue-color);
-}
-
-.contact-box-map {
-  position: relative;
-  top: 130px;
-  right: 30px;
-  width: 120%;
-  z-index: 1;
 }
 
 .contact-box-form {
