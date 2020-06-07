@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="/media_pocket_width.css" />
 		<link href="./fonts/css/all.css" rel="stylesheet" />
 		<!--load all styles -->
 
@@ -38,8 +39,8 @@
 				<a href="#services">Plus d'infos</a>
 			</figcaption>
 
-			<div class="fa fa-chevron-left" aria-hidden="true"></div>
-			<div class="fa fa-chevron-right" aria-hidden="true"></div>
+			<div class="fa fa-chevron fa-chevron-left" aria-hidden="true"></div>
+			<div class="fa fa-chevron fa-chevron-right" aria-hidden="true"></div>
 		</section>
 		<!-- page des services  commence ici  -->
 		<section id="services">
@@ -88,7 +89,6 @@
 					</li>
 				</ul>
 			</section>
-			<footer>Ceci est un exercice This is an exercise © license free</footer>
 		</section>
 		<!-- page des Projets  commence ici  -->
 
@@ -198,10 +198,6 @@
 					</figure>
 				</li>
 			</ul>
-
-			<footer>
-				Ceci est un exercice This is an exercise © license free
-			</footer>
 		</section>
 		<!-- page des Contacts  commence ici  -->
 		<section id="contact">
@@ -213,26 +209,25 @@
 			</div>
 
 			<form class="contact-box-form" method="" action="" target="myframe">
-				<h3>Contact infos</h3>
+				<h3>Contact info</h3>
 				<p class="soustitre">
-					Webagency SAS<br />
-					25 rue hauteville 75010 Paris
+					<span> Webagency SAS</span><br />
+					25 rue hauteville 75010 Paris <br />
+					tel : 01 02 03 04 05
 				</p>
 				<input type="text" name="nom" placeholder="Votre Nom" /><br />
-				<input type="text" name="prenom" placeholder="Votre prénom" /><br />
+
 				<input type="email" name="email" placeholder="Votre email" /><br />
-				<input type="text" name="sujet" placeholder="sujet" /><br />
+				<input type="text" name="sujet" placeholder="Sujet" /><br />
 
 				<textarea
 					name="message"
 					id="message"
-					placeholder="Votre message"
+					placeholder="Tapez Votre message ici"
 				></textarea
 				><br />
-				<input type="submit" value="Envoyer" />
+				<input class="btn" type="submit" value="Envoyer" />
 			</form>
 		</section>
-
-		<footer>Ceci est un exercice This is an exercise © license free</footer>
 	</body>
 </html>

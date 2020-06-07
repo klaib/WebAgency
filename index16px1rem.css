@@ -1,11 +1,11 @@
 :root {
   --project-blue-color: #5cadd3;
   --project-darkerblue-color: #4494bb;
+
+
   --project-grey-color: #e5e5e5;
-  --project-lightgrey-color: #f0f4f6;
-  --project-bordergrey-color: #a0a8b4;
+  --project-lightergrey-color: #e5e5e5;
   --project-darkgrey-color: #46494d;
-  font-size: 62.5%;
 }
 
 /* --- spécifications des polices ---*/
@@ -31,18 +31,19 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  font-size: 100%;
   font-family: "RobotoBlack", sans-serif;
-  font-size: 160%;
   width: 100%;
 }
 
 section {
-  margin-top: 0;
-  padding-top: 10rem;
+  margin-top: 0px;
+  padding-top: 100px;
+  /* padding-bottom: 150px; */
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 0.\drem;
   color: var(--project-darkgrey-color);
 }
 
@@ -86,35 +87,35 @@ ul {
 nav ul {
   display: flex;
   flex-wrap: wrap;
-  margin: 0.8rem;
+  margin: 8px;
 }
 
 nav li {
-  margin-right: 1.5rem;
+  margin-right: 15px;
   padding-left: 1.8rem;
 }
 
 nav a {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   color: var(--project-darkgrey-color);
-  padding-top: 2rem;
-  padding-bottom: 0.3rem;
+  padding-top: 20px;
+  padding-bottom: 3px;
   text-decoration: none;
 }
 
 nav a:hover {
-  border-top: 0.3rem solid;
+  border-top: 3px solid;
   border-top-color: var(--project-blue-color);
 }
 
 #slidescontainer {
   overflow: hidden;
-  padding-top: 11rem;
+  padding-top: 110px;
 }
 
 .slider {
   position: relative;
-  margin: 0;
+  margin: 0px;
   display: flex;
   flex-direction: row;
   width: 200%;
@@ -123,8 +124,6 @@ nav a:hover {
 
 .slider img {
   width: 100%;
-
-  object-fit: cover;
   /* related to 500% */
 }
 
@@ -137,19 +136,21 @@ nav a:hover {
 }
 
 .slidertext a {
-  background: var(--project-blue-color);
+  top: 0px;
+  background-color: var(--project-blue-color);
   padding: 2%;
-  border-bottom: 0.3rem solid var(--project-darkerblue-color);
-  border-radius: 0.5rem;
-  margin-top: 2rem;
-  font-size: 3rem;
+  border-bottom: 3px solid var(--project-darkerblue-color);
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: "RobotoBold", sans-serif;
+  font-size: 1.2rem;
   color: white;
   text-decoration: none;
 }
 
 .slidertext p {
   color: white;
-  font-size: 1.6rem;
+  font-size: 0.8rem;
 }
 
 .bluebar {
@@ -168,7 +169,7 @@ nav a:hover {
 .fa-chevron {
   position: absolute;
   top: 55%;
-  font-size: 1.9rem;
+  font-size: 1.2rem;
   background-color: var(--project-darkgrey-color);
   color: white;
 }
@@ -176,13 +177,14 @@ nav a:hover {
 .fa-chevron-left {
   left: -0.8%;
   border-radius: 20% 50% 50% 20%;
-  padding: 2.2rem 1.5rem 2.2rem 2.2rem;
+  /* padding: 22px 15px 22px 22px; */
+  padding: 1.4rem 0.95rem 1.4rem 1.4rem;
 }
 
 .fa-chevron-right {
   right: -0.8%;
   border-radius: 50% 0% 0% 50%;
-  padding: 2.2rem 2.2rem 2.2rem 1.5rem;
+  padding: 22px 22px 22px 15px;
 }
 
 .fa-chevron-left:hover,
@@ -231,8 +233,8 @@ hr {
 }
 
 h2 {
-  font-size: 4.8rem;
-  margin: 1rem;
+  font-size: 3rem;
+  margin: 10px;
 }
 
 section .services_core {
@@ -264,16 +266,16 @@ ul #services_list {
 .fa-circle {
   position: relative;
   color: var(--project-blue-color);
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   border-radius: 50%;
-  padding: 0.5rem;
+  padding: 5px;
   background-color: white;
-  top: -2rem;
-  left: 0;
+  top: -20px;
+  left: 0px;
 }
 
 #services_list li {
-  height: 12rem;
+  height: 100px;
 }
 
 #text_services {
@@ -290,19 +292,19 @@ ul #services_list {
 .fa-cubes,
 .fa-chart-pie {
   position: relative;
-  top: 7.6rem;
-  left: -7.5rem;
-  border: 0.1rem solid var(--project-grey-color);
+  top: 76px;
+  left: -75px;
+  border: 1px solid var(--project-grey-color);
   border-radius: 50%;
-  padding: 1.6rem 1.5rem 1.6rem 1.5rem;
+  padding: 16px 15px 16px 15px;
   color: var(--project-blue-color);
-  font-size: 2.8rem;
+  font-size: 1.8rem;
 }
 
 #services_list .fa-circle {
   background-color: white;
-  top: 7.5rem;
-  left: -9.3rem;
+  top: 75px;
+  left: -93px;
 }
 
 /* les services finnissent ici */
@@ -326,33 +328,33 @@ ul #services_list {
   flex-direction: row;
   justify-content: center;
   margin: 2%;
-  height: 5rem;
+  height: 50px;
 }
 
 .projectselect li {
   position: relative;
-  padding: 1rem 0.5rem 1rem 0.5rem;
+  padding: 10px 5px 10px 5px;
   background-color: var(--project-grey-color);
   font-family: "RobotoBold", sans-serif;
   color: black;
-  height: 2rem;
-  border-bottom: 0.3rem solid var(--project-grey-color);
+  height: 20px;
+  border-bottom: 3px solid var(--project-grey-color);
 }
 
 .projectselect li:first-of-type {
-  border-radius: 0.5rem 0 0 0.5rem;
+  border-radius: 5px 0 0 5px;
   color: white;
   background-color: var(--project-blue-color);
-  border-bottom: 0.3rem solid var(--project-darkerblue-color);
+  border-bottom: 3px solid var(--project-darkerblue-color);
 }
 
 .projectselect li:last-of-type {
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0 5px 5px 0;
 }
 
 .projectselect li:hover {
   background-color: var(--project-blue-color);
-  border-bottom: 0.3rem solid var(--project-darkerblue-color);
+  border-bottom: 3px solid var(--project-darkerblue-color);
 }
 
 .projectselect li:hover .triangle {
@@ -366,8 +368,8 @@ ul #services_list {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 1.5rem 0.75rem 0 0.75rem;
-  border-color: var(--project-darkerblue-color) transparent;
+  border-width: 15px 7.5px 0 7.5px;
+  border-color: var(--project-blue-color) transparent;
 }
 
 .triangle {
@@ -378,8 +380,8 @@ ul #services_list {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 1.5rem 0.75rem 0 0.75rem;
-  border-color: var(--project-darkerblue-color) transparent;
+  border-width: 15px 7.5px 0 7.5px;
+  border-color: var(--project-blue-color) transparent;
 }
 
 .projectdisplay {
@@ -388,31 +390,31 @@ ul #services_list {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
-  padding: 0;
-  max-width: 125rem;
+  padding: 0px;
+  max-width: 1250px;
 }
 
 .projectdisplay li figure {
   position: relative;
   display: flex;
   flex-flow: column nowrap;
-  margin: 1.4rem;
+  margin: 14px;
 }
 
 .projectdisplay img {
-  width: 25rem;
+  width: 250px;
   object-fit: scale-down;
 }
 
 .projectdisplay li figcaption {
   position: absolute;
-  opacity: 1;
+  opacity: 0;
   justify-content: center;
   color: white;
   height: 35%;
   width: 100%;
   top: 65%;
-  left: 0;
+  left: 0px;
   background: var(--project-darkgrey-color);
 }
 
@@ -425,84 +427,83 @@ ul #services_list {
 }
 
 .fa-eye {
+  display: flex;
   position: absolute;
-  top: -27%;
+  top: -32%;
   left: 85%;
-  border: 0.1rem solid white;
+  border: 1px solid var(--project-blue-color);
   border-radius: 50%;
-  padding: 0.7rem 0.7rem 0.6rem 0.7rem;
-  background: var(--project-blue-color);
+  padding: 6px 7px;
+  color-interpolation-filters: inherit;
+  /* color: var(--project-blue-color); */
   z-index: 2;
 }
+
+/* 
+
+.projectdisplay li:hover figcaption {
+  opacity: 1;
+} */
 
 /* les projets finnissent ici */
 
 /* les  contacts ici */
 
 #contact {
-  padding-top: 10rem;
-  height: 100vh;
+  padding-top: 100px;
+  align-items: center;
   display: flex;
-  position: relative;
-  /* flex-direction: column; */
-  /* flex-wrap: wrap; */
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 iframe {
   width: 100%;
-  height: 100vh;
-  opacity: 0.8;
+  height: 600px;
+  opacity: 0.6;
 }
 
 .iframe {
   margin-top: 50px;
+  padding-top: 0px;
   width: 100%;
-  opacity: 0.7;
+  height: 600px;
+  opacity: 0.9;
   background-color: var(--project-blue-color);
-
 }
 
 .contact-box-form {
+  margin-top: 5%;
+  margin-right: 3%;
   position: absolute;
-  top: 20%;
-  left: 65%;
+  background: #9d9d9d3d;
+  right: 0px;
   height: 65%;
-  width: 25%;
-  display: flex;
-  flex-flow: column nowrap;
-  background: var(--project-lightgrey-color);
-  opacity: 0.8;
+  width: 20%;
   z-index: 2;
 }
 
 form textarea {
   height: 30%;
-  width: auto;
-}
-
-form input,
-textarea {
-  border: 0.1rem solid var(--project-bordergrey-color);
-  margin: 0.8rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
+  width: 60%;
 }
 
 form .btn {
-  width: fit-content;
-  padding: 0.6rem;
-  border-radius: 0.5rem;
+  padding: 6px;
+  border-radius: 8px;
   color: white;
   font-weight: 900;
   background: var(--project-blue-color);
-  border-bottom: 0.3rem solid var(--project-darkerblue-color);
 }
 
 form .btn:hover {
-  cursor: pointer;
+  /*background: red;*/
+  box-shadow: 3px 3px var(--project-darkerblue-color);
+
+  transition: box-shadow 0.3s;
 }
 
 .contact-box-form span {
   font-weight: 900;
-  color: var(--project-darkgrey-color);
+  color: black;
 }
