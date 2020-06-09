@@ -1,43 +1,3 @@
-:root {
-	--project-blue-color: #5cadd3;
-	--project-darkerblue-color: #4494bb;
-	--project-grey-color: #e5e5e5;
-	--project-lightgrey-color: #f0f4f6;
-	--project-bordergrey-color: #a0a8b4;
-	--project-darkgrey-color: #646464;
-	font-size: 62.5%;
-	/* 1 rem =10px */
-}
-
-/* --- spécifications des polices ---*/
-
-/* fontawsome  via web */
-
-@font-face {
-	font-family: "RobotoBlack";
-	src: url("./fonts/Roboto-Black.ttf");
-}
-
-@font-face {
-	font-family: "RobotoBold";
-	src: url("./fonts/Roboto-Bold.ttf");
-}
-
-@font-face {
-	font-family: "RobotoLight";
-	src: url("./fonts/Roboto-Light.ttf");
-}
-
-@font-face {
-	font-family: "RobotoMedium";
-	src: url("./fonts/Roboto-Medium.ttf");
-}
-
-@font-face {
-	font-family: "RobotoThin";
-	src: url("./fonts/Roboto-Thin.ttf");
-}
-
 body {
 	margin: 0;
 	padding: 0;
@@ -49,6 +9,10 @@ body {
 
 section {
 	padding-top: 10rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
 }
 
 p {
@@ -56,11 +20,7 @@ p {
 	color: var(--project-darkgrey-color);
 }
 
-section {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-}
+
 
 header {
 	display: flex;
@@ -78,7 +38,7 @@ header {
 header img {
 	object-fit: scale-down;
 	max-width: 20%;
-	padding: 4% 0% 5% 10%;
+	padding: 3%;
 }
 
 nav {
@@ -118,10 +78,16 @@ nav a:hover {
 }
 
 #value_principal {
-	overflow: hidden;
-	/* padding-top: 11rem; */
+	position: relative;
+	top: 13%;
 	height: 85vh;
 }
+
+/* 
+#slidescontainer {
+	overflow: hidden;
+	padding-top: 110px;
+} */
 
 .slider {
 	position: relative;
@@ -134,18 +100,15 @@ nav a:hover {
 
 .slider img {
 	width: 100%;
-
-	object-fit: scale-down;
-	/* related to 500% */
 }
 
 .slidertext {
 	position: absolute;
-	top: 40%;
-	left: 10%;
+	top: 20%;
+	left: 5%;
 	color: white;
-	width: 28%;
-	font-size: large;
+	width: 30%;
+	height: 25%;
 }
 
 .slidertext a {
@@ -179,7 +142,7 @@ nav a:hover {
 
 .fa-chevron {
 	position: absolute;
-	top: 55%;
+	top: 47%;
 	font-size: 1.9rem;
 	background-color: var(--project-darkgrey-color);
 	color: white;
