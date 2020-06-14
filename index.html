@@ -2,47 +2,64 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="index.css" />
-		<!-- <link rel="stylesheet" href="./iphone_x.css" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./root_var_fonts.css" />
 		<link href="./fonts/css/all.css" rel="stylesheet" />
-		<!--load all styles -->
+		<link rel="stylesheet" href="index.css" />
+
+		<link
+			rel="stylesheet"
+			media="screen  and (max-width:480px)"
+			href="to_480px.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			media="screen  and (min-width:481px) and (max-width:1024)"
+			href="./481px_to_1024px.css"
+		/>
 
 		<title>WebAgency: ne cherchez plus</title>
 	</head>
 
 	<body>
-		<header>
-			<img src="./images/logo.png" alt="Logo de webagency" />
-			<nav>
-				<ul>
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#projects">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+		<div class="page page1">
+			<header>
+				<img src="./images/logo.png" alt="Logo de webagency" />
+				<nav>
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#projects">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
 
-		<section id="value_principal">
-			<figure class="slider">
-				<img src="images/fillette_creative.jpg" alt="image de fillette" />
-				<img src="images/garcon_audible.jpg" alt="image de garçon megaphone" />
-				<div class="bluebar"></div>
-			</figure>
-			<figcaption class="slidertext">
-				<h1>
-					<span class="agencyname">WEBAGENCY</span> : L'AGENCE DE TOUS VOS
-					PROJETS !
-				</h1>
-				<p>Vous avez un projet Web? La WebAgency vous aide à le réaliser!</p>
-				<br />
-				<a href="#services">Plus d'infos</a>
-			</figcaption>
+			<section id="value_principal">
+				<figure class="slider">
+					<img src="images/fillette_creative.jpg" alt="image de fillette" />
+					<img
+						src="images/garcon_audible.jpg"
+						alt="image de garçon megaphone"
+					/>
+					<div class="bluebar"></div>
+				</figure>
+				<figcaption class="slidertext">
+					<h1>
+						<span class="agencyname">WEBAGENCY</span> : L'AGENCE DE TOUS VOS
+						PROJETS !
+					</h1>
+					<p>Vous avez un projet Web? La WebAgency vous aide à le réaliser!</p>
+					<br />
+					<a href="#services">Plus d'infos</a>
+				</figcaption>
 
-			<div class="fa fa-chevron fa-chevron-left" aria-hidden="true"></div>
-			<div class="fa fa-chevron fa-chevron-right" aria-hidden="true"></div>
-		</section>
+				<div class="fa fa-chevron fa-chevron-left" aria-hidden="true"></div>
+				<div class="fa fa-chevron fa-chevron-right" aria-hidden="true"></div>
+			</section>
+		</div>
+
 		<!-- page des services  commence ici  -->
 		<section id="services">
 			<h2>NOS SERVICES</h2>
@@ -93,7 +110,7 @@
 		</section>
 		<!-- page des Projets  commence ici  -->
 
-		<section id="projects">
+		<section class="page" id="projects">
 			<h2>NOS PROJETS</h2>
 			<hr class="strait_line" />
 			<i class="fas fa-circle"></i>
@@ -102,7 +119,7 @@
 				spécifiques. Pour un produit qui vous ressemble, faites appel à notre
 				équipe.
 			</p>
-			<ul class="projectselect">
+			<ul class="projectselect page">
 				<li>
 					All Works
 					<div class="triangleactive"></div>
@@ -216,12 +233,12 @@
 				></iframe>
 			</div>
 
-			<form class="contact-box-form" method="" action="" target="myframe">
+			<form class="contact-box-form page" method="" action="" target="myframe">
 				<h3>Contact info</h3>
-				<p class="soustitre">
+				<p>
 					<span> Webagency SAS</span><br />
 					25 rue hauteville 75010 Paris <br />
-					tel : 01 02 03 04 05
+					Tel : 01 02 03 04 05
 				</p>
 				<input type="text" name="nom" placeholder="Votre Nom" /><br />
 
