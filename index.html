@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
 
 		<link
 			rel="stylesheet"
-			media="screen  and (min-width:481px) and (max-width:1024)"
+			media="screen  and (min-width:481px) and (max-width:1024px)"
 			href="./481px_to_1024px.css"
 		/>
 
@@ -23,7 +23,7 @@
 	</head>
 
 	<body>
-		<div class="page page1">
+		<div id="page1">
 			<header>
 				<img src="./images/logo.png" alt="Logo de webagency" />
 				<nav>
@@ -36,25 +36,26 @@
 				</nav>
 			</header>
 
-			<section id="value_principal">
-				<figure class="slider">
+			<section>
+				<figure id="slider">
 					<img src="images/fillette_creative.jpg" alt="image de fillette" />
 					<img
 						src="images/garcon_audible.jpg"
 						alt="image de garçon megaphone"
 					/>
-					<div class="bluebar"></div>
+					<div id="bluebar"></div>
 				</figure>
-				<figcaption class="slidertext">
+				<figcaption id="slidertext">
 					<h1>
-						<span class="agencyname">WEBAGENCY</span> : L'AGENCE DE TOUS VOS
+						<span id="agencyname">WEBAGENCY</span> : L'AGENCE DE TOUS VOS
 						PROJETS !
 					</h1>
-					<p>Vous avez un projet Web? La WebAgency vous aide à le réaliser!</p>
+					<p>
+						Vous avez un projet Web? La WebAgency vous aide à le réaliser!
+					</p>
 					<br />
 					<a href="#services">Plus d'infos</a>
 				</figcaption>
-
 				<div class="fa fa-chevron fa-chevron-left" aria-hidden="true"></div>
 				<div class="fa fa-chevron fa-chevron-right" aria-hidden="true"></div>
 			</section>
@@ -70,7 +71,7 @@
 				long du cycle produit. Des réalisations de qualité et donc un service
 				après-vente disponible.
 			</p>
-			<div class="services_core">
+			<div id="services_core">
 				<img
 					id="monitor"
 					src="images/Nos_services/main-feature.png"
@@ -91,7 +92,7 @@
 					<li>
 						<i class="fas fa-chart-line"></i>
 						<i class="fas fa-circle"></i>
-						<h3>UI Design</h3>
+						<h3 id="UXdesign">UI Design</h3>
 						<p>
 							Une expèrience utilisateur positive commence par design en
 							fonction des usages. Notre équipe conjugue expérience et
@@ -121,7 +122,7 @@
 				spécifiques. Pour un produit qui vous ressemble, faites appel à notre
 				équipe.
 			</p>
-			<ul class="projectselect page">
+			<ul id="projectselect" class="page">
 				<li>
 					All Works
 					<div class="triangleactive"></div>
@@ -139,7 +140,7 @@
 					<div class="triangle"></div>
 				</li>
 			</ul>
-			<ul class="projectdisplay">
+			<ul id="projectdisplay">
 				<li>
 					<figure>
 						<img src="images/nos_projets/01.jpg" alt="image d'un projet 1" />
@@ -235,7 +236,12 @@
 				></iframe>
 			</div>
 
-			<form class="contact-box-form page" method="" action="" target="myframe">
+			<form
+				class="contact-box-form page"
+				method="get"
+				action="/contact_page.php"
+				target="myframe"
+			>
 				<h3>Contact info</h3>
 				<p>
 					<span> Webagency SAS</span><br />

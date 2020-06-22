@@ -1,18 +1,11 @@
-body {
-    background-color: rgb(174, 240, 231);
-    font-size: 120%;
+/* .disable-hover,
+.disable-hover * {
+    pointer-events: none !important;
+} */
 
-}
-
-p {
-    font-size: 1.6rem;
-    color: var(--project-darkgrey-color);
-}
-
-.page1 {
-
+#page1 {
     background-color: coral;
-
+    height: 100vh;
 }
 
 header {
@@ -20,100 +13,94 @@ header {
     flex-flow: column nowrap;
     position: fixed;
     top: 0;
-    justify-content: space-between;
+
+    height: 10rem;
     align-items: center;
     width: 100%;
-    height: 12rem;
+
     z-index: 3;
 }
 
-/* Logo WebAgency */
+/* Logo WebAgency*/
+
 header img {
-    object-fit: scale-down;
-    min-width: 20rem;
-    padding: 0.5rem 6rem 0 0;
+    /* object-fit: scale-down; */
+
+    min-width: 200px;
+    padding: 1rem 0 0 0;
 }
 
 nav {
     max-width: 20rem;
-    padding: 0 7rem 0 0;
+    /* min-height: 15rem; */
+    padding: 0 8% 0 15%;
 }
 
-/* Navigation Accueil */
+/* Navigation Accueil*/
 
 /* ul style reaches to "services" as well  */
 
-nav ul {
-    margin: 0;
-    display: flex;
-    min-height: 7rem;
-    flex-flow: row wrap;
+ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
 
 nav li {
-    padding-left: 1.2rem;
-    max-height: 1rem;
+    padding: 0 1.5rem 0.5rem 1.2rem;
 }
 
 nav a {
-    font-size: 1.4rem;
     padding: 0;
-
 }
 
-
-section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-
-
+nav a:hover {
+    border-top: 0.3rem solid;
+    border-top-color: var(--project-blue-color);
 }
 
-.slider {
-
+#slider {
     padding-top: 10rem;
     display: flex;
     flex-wrap: nowrap;
     width: 600%;
-
-
     animation: 15s slides infinite ease-in-out;
 }
 
-
-
-
-/* @keyframes slides {
+@keyframes slides {
     0% {
-        left: -160%;
+        left: -150%;
     }
 
     50% {
-        left: -470%;
+        left: -475%;
     }
+
 
     100% {
-        left: -160%;
+        left: -150%;
     }
-} */
+}
 
-/* @keyframes progressbar {
+@keyframes progressbar {
     0% {
-        width: 15%;
+        width: 25%;
     }
 
     50% {
-        width: 90%;
+        width: 96%;
     }
 
     100% {
-        width: 15%;
+        width: 25%;
     }
-} */
+}
 
 /* fin de la pge d'acceuil  */
 
@@ -127,8 +114,15 @@ hr {
 
 h2 {
     margin: 0rem;
-    font-size: 2.2rem;
+    width: max-content;
+    font-size: 2rem;
     text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 /* services et projets  FIN  */
@@ -136,18 +130,17 @@ h2 {
 #services {
     display: flex;
     flex-flow: column nowrap;
-
     padding-top: 12rem;
-    background-color: yellow;
-
+    background-color: rgb(186, 241, 186);
 }
 
 #services p {
     margin: 0;
-    min-width: 80%;
+    width: 90%;
+    font-size: small;
 }
 
-.services_core {
+#services_core {
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -155,44 +148,20 @@ h2 {
     align-items: center;
 }
 
-
-.services_core img {
+#services_core img {
     padding-top: 1.5rem;
-    max-width: 70%;
+    max-width: 60%;
 }
-
-
 
 #services_list {
     display: flex;
     flex-flow: column nowrap;
-    padding: 0 3rem 0 8rem;
-
+    padding: 0 1.5rem 0 8rem;
 }
 
-.fa-circle {
-    position: relative;
-    color: var(--project-blue-color);
-    font-size: 1.3rem;
-    border-radius: 50%;
-    padding: 0.5rem;
-    background-color: white;
-    top: -2rem;
-    left: 0;
-}
-
-/* #services p {
-    max-width: 70%;
-} */
-
-#services_list li {
-    /* height: 12rem; */
-
-}
-
-#text_services {
-    width: 50%;
-    text-align: center;
+#UXdesign h3 {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 #monitor {
@@ -203,19 +172,15 @@ h2 {
 .fa-chart-line,
 .fa-cubes,
 .fa-chart-pie {
-    position: relative;
-    top: 7.6rem;
+    top: 4.6rem;
     left: -7.5rem;
     border: 0.1rem solid var(--project-grey-color);
-    border-radius: 50%;
     padding: 1.1rem 1rem 1.1rem 1rem;
-    color: var(--project-blue-color);
     font-size: 2rem;
 }
 
 #services_list .fa-circle {
-    background-color: white;
-    top: 7.5rem;
+    top: 4.5rem;
     left: -9.3rem;
 }
 
@@ -224,17 +189,19 @@ h2 {
 /* les projets commencent ici /
 /**/
 #projects {
+    padding-top: 12rem;
     align-items: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    background-color: hotpink;
 
+    background-color: hotpink;
 }
 
 #projects p {
-    max-width: 50%;
+    max-width: 90%;
     text-align: center;
+    margin: 0 0 1rem 0;
+    font-size: small;
 }
 
 #projects .projectselect {
@@ -244,34 +211,23 @@ h2 {
     height: 5rem;
 }
 
-.projectselect li {
-    position: relative;
-    padding: 1rem 0.5rem 1rem 0.5rem;
-    font-size: 1.6rem;
-    background-color: var(--project-grey-color);
-    color: var(--project-darkgrey-color);
+#projectselect li {
+    padding: 0.7rem 0.4rem 0.2rem 0.4rem;
+    font-size: 1.2rem;
     height: 2rem;
-    border-bottom: 0.3rem solid var(--project-grey-color);
+    border-bottom: 0.1rem;
 }
 
-.projectselect li:first-of-type {
+#projectselect li:first-of-type {
     border-radius: 0.5rem 0 0 0.5rem;
-    color: white;
-    background-color: var(--project-blue-color);
-    border-bottom: 0.3rem solid var(--project-darkerblue-color);
+    border-bottom: 0.1rem;
 }
 
-.projectselect li:last-of-type {
+#projectselect li:last-of-type {
     border-radius: 0 0.5rem 0.5rem 0;
 }
 
-.projectselect li:hover {
-    background-color: var(--project-blue-color);
-    border-bottom: 0.3rem solid var(--project-darkerblue-color);
-    color: white;
-}
-
-.projectselect li:hover .triangle {
+#projectselect li:hover .triangle {
     opacity: 1;
 }
 
@@ -282,7 +238,7 @@ h2 {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 1.5rem 0.75rem 0 0.75rem;
+    border-width: 1.2rem 0.5rem 0 0.5rem;
     border-color: var(--project-darkerblue-color) transparent;
 }
 
@@ -298,67 +254,28 @@ h2 {
     border-color: var(--project-darkerblue-color) transparent;
 }
 
-.projectdisplay {
+#projectdisplay {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
-    max-width: 125rem;
+    max-width: 450rem;
 }
 
-.projectdisplay li {
-    padding: 1rem;
+#projectdisplay li {
+    padding: 0.5rem;
     font-size: 1.6rem;
 }
 
-.projectdisplay li figure {
-    margin: 0;
-    position: relative;
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-.projectdisplay img {
-    width: 25rem;
+#projectdisplay img {
+    width: 15rem;
     object-fit: scale-down;
-}
-
-.projectdisplay li figcaption {
-    position: absolute;
-    opacity: 0;
-    justify-content: center;
-    top: 65%;
-    color: white;
-    height: 33%;
-    width: 94%;
-    left: 0;
-    padding: 1% 3%;
-    background: var(--project-darkgrey-color);
-}
-
-.projectdisplay li:hover figcaption {
-    opacity: 0.7;
-}
-
-.projectdisplay li figcaption span {
-    font-weight: 900;
-}
-
-.fa-eye {
-    position: absolute;
-    top: -27%;
-    left: 85%;
-    border: 0.1rem solid white;
-    border-radius: 50%;
-    padding: 0.7rem 0.7rem 0.6rem 0.7rem;
-    background: var(--project-blue-color);
-    z-index: 2;
 }
 
 /* les projets finnissent ici /
 
-/* les  contacts ici /
+/* les  contacts ici */
 
 #contact {
     padding-top: 5rem;
@@ -374,23 +291,18 @@ iframe {
 }
 
 .iframe {
-    margin-top: 5rem;
-    width: 100%;
-
-    background-color: var(--project-blue-color);
+    margin-top: 10rem;
 }
 
 .contact-box-form {
-    position: absolute;
-    top: 20%;
-    left: 75%;
+    top: 30%;
+    left: 2%;
     height: 60%;
-    width: 22%;
-    display: flex;
-    flex-flow: column nowrap;
-    background: var(--project-lightgrey-color);
-    opacity: 0.9;
-    z-index: 2;
+    min-width: 45%;
+}
+
+#contact span {
+    font-size: medium;
 }
 
 form textarea {
@@ -401,26 +313,8 @@ form textarea {
 form input,
 textarea {
     border: 0.1rem solid var(--project-bordergrey-color);
-    margin: 0.2rem;
+    margin: 0.4rem;
     padding: 1rem;
-    border-radius: 0.5rem;
-}
 
-form .btn {
-    width: max-content;
-    padding: 0.6rem;
-    border-radius: 0.5rem;
-    color: white;
-    font-weight: 900;
-    background: var(--project-blue-color);
-    border-bottom: 0.3rem solid var(--project-darkerblue-color);
-}
-
-form .btn:hover {
-    cursor: pointer;
-}
-
-.contact-box-form span {
-    font-weight: 900;
-    color: var(--project-darkgrey-color);
+    font-size: 1.2rem;
 }

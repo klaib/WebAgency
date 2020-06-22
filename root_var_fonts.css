@@ -1,0 +1,41 @@
+:root {
+	--project-blue-color: #5cadd3;
+	--project-darkerblue-color: #4494bb;
+	--project-grey-color: #e5e5e5;
+	--project-lightgrey-color: #f0f4f6;
+	--project-bordergrey-color: #a0a8b4;
+	--project-darkgrey-color: #646464;
+	font-size: 62.5%;
+	/* 1 rem =10px */
+	margin: 0;
+	padding: 0;
+}
+
+/* --- spécifications des polices ---*/
+
+/* fontawsome  via web */
+
+@font-face {
+	font-family: "RobotoBlack";
+	src: url("./fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+	font-family: "RobotoBold";
+	src: url("./fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+	font-family: "RobotoLight";
+	src: url("./fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+	font-family: "RobotoMedium";
+	src: url("./fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+	font-family: "RobotoThin";
+	src: url("./fonts/Roboto-Thin.ttf");
+}
