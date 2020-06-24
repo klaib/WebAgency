@@ -237,29 +237,34 @@
 			</div>
 
 			<form
-				class="contact-box-form page"
+				id="contact-box-form"
 				method="get"
 				action="/contact_page.php"
 				target="myframe"
 			>
-				<h3>Contact info</h3>
-				<p>
-					<span> Webagency SAS</span><br />
-					25 rue hauteville 75010 Paris <br />
-					Tel : 01 02 03 04 05
-				</p>
-				<input type="text" name="nom" placeholder="Votre Nom" /><br />
+				<div>
+					<h3>Contact info</h3>
+					<p>
+						<span> Webagency SAS</span><br />
+						25 rue hauteville 75010 Paris <br />
+						Tel : 01 02 03 04 05
+					</p>
 
-				<input type="email" name="email" placeholder="Votre email" /><br />
-				<input type="text" name="sujet" placeholder="Sujet" /><br />
+					<input type="text" name="nom" placeholder="Votre Nom" /><br />
 
-				<textarea
+					<input type="email" name="email" placeholder="Votre email" /><br />
+					<input type="text" name="sujet" placeholder="Sujet" /><br />
+				</div>
+				<div ><textarea
 					name="message"
 					id="message"
 					placeholder="Tapez Votre message ici"
 				></textarea
 				><br />
-				<input class="btn" type="submit" value="Envoyer le message" />
+				<input class="btn" type="submit" value="Envoyer le message" /></div>
+				
+		
+				</form>
 			</form>
 		</section>
 	</body>

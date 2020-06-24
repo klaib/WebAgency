@@ -7,7 +7,6 @@ body {
 	height: 100vh;
 	width: 100%;
 	overflow-x: hidden;
-
 }
 
 #page1,
@@ -22,7 +21,6 @@ body {
 p {
 	font-size: 1.6rem;
 	color: var(--project-darkgrey-color);
-
 }
 
 header {
@@ -87,8 +85,6 @@ section {
 	flex-direction: column;
 }
 
-
-
 #slider {
 	position: relative;
 	padding-top: 10rem;
@@ -105,11 +101,15 @@ section {
 
 #slidertext {
 	position: absolute;
-	top: 30%;
+	top: 35%;
 	left: 7%;
 	color: white;
-	max-width: 30%;
+	max-width: 40%;
 	min-width: 300px;
+}
+
+#slidertext h1 {
+	font-size: 4rem;
 }
 
 #slidertext a {
@@ -118,6 +118,7 @@ section {
 	border-radius: 0.3rem;
 	padding: 1rem;
 	font-size: 1.5rem;
+	font-weight: 900;
 	color: white;
 	text-decoration: none;
 }
@@ -437,11 +438,9 @@ iframe {
 }
 
 .iframe {
-
 	margin-top: 50px;
 	width: 100%;
 	background-color: var(--project-blue-color);
-
 }
 
 /* .iframe {
@@ -451,31 +450,53 @@ iframe {
 	background-color: var(--project-blue-color);
 } */
 
-.contact-box-form {
+#contact-box-form {
 	position: absolute;
-	top: 20%;
+	top: calc(5rem + 10%);
 	left: 65%;
-	height: 65%;
-	width: 25%;
+	height: max-content;
+
+	width: 20%;
+
 	display: flex;
 	flex-flow: column nowrap;
 	background: var(--project-lightgrey-color);
-	opacity: 0.9;
+	opacity: 0.8;
 	z-index: 2;
 }
 
-form textarea {
-	height: 30%;
-	width: auto;
+#contact-box-form div {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+#contact-box-form span {
+	font-weight: 900;
+	color: var(--project-darkgrey-color);
 }
 
 form input,
 textarea {
 	border: 0.1rem solid var(--project-bordergrey-color);
-	margin: 0.8rem;
 	padding: 1rem;
 	border-radius: 0.5rem;
+	margin-bottom: 1.5rem;
+	margin-right: 1rem;
+	width: calc(100% - 2rem);
 }
+
+form textarea {
+	height: 20rem;
+}
+
+/* 
+form input,
+textarea {
+	border: 0.1rem solid var(--project-bordergrey-color);
+	margin: 1rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+} */
 
 form .btn {
 	width: max-content;
@@ -489,9 +510,4 @@ form .btn {
 
 form .btn:hover {
 	cursor: pointer;
-}
-
-.contact-box-form span {
-	font-weight: 900;
-	color: var(--project-darkgrey-color);
 }
