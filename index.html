@@ -241,26 +241,29 @@
 				action="/contact_page.php"
 				target="myframe"
 			>
-				<div>
+				<div id="contact_part1">
 					<h3>Contact info</h3>
 					<p>
 						<span> Webagency SAS</span><br />
 						25 rue hauteville 75010 Paris <br />
 						Tel : 01 02 03 04 05
 					</p>
-
-					<input type="text" name="nom" placeholder="Votre Nom" /><br />
-
+				</div>
+				<div id="contact_part2"><input type="text" name="nom" placeholder="Votre Nom" />
 					<input type="email" name="email" placeholder="Votre email" /><br />
+
 					<input type="text" name="sujet" placeholder="Sujet" /><br />
 				</div>
-				<div ><textarea
+				
+				<div id="contact_part3"> 
+					<textarea
 					name="message"
 					id="message"
 					placeholder="Tapez Votre message ici"
-				></textarea
-				><br />
-				<input class="btn" type="submit" value="Envoyer le message" /></div>
+					></textarea><br />
+					<input class="btn" type="submit" value="Envoyer le message" /><br />
+				</div>
+					
 				
 		
 				</form>

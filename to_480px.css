@@ -261,14 +261,29 @@ iframe {
     margin-top: 5rem;
 }
 
-.contact-box-form {
+#contact-box-form {
+    flex-flow: row wrap;
     top: 20%;
-    left: 2%;
-    height: 60%;
-    min-width: 75%;
+    left: 3%;
+
+    height: 30%;
+    min-width: 90%;
 }
 
-form p {
+#contact-box-form div {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#contact-box-form #contact_part1 {
+    width: 90%;
+}
+
+#contact-box-form #contact_part2 {
+    width: 35%;
+}
+
+#contact-box-form p {
     font-size: medium;
 }
 
@@ -277,7 +292,7 @@ form p {
 }
 
 form textarea {
-    height: 30%;
+    height: 43%;
     width: auto;
 }
 
