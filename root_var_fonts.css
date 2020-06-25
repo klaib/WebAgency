@@ -1,14 +1,13 @@
 :root {
-	--project-blue-color: #5cadd3;
-	--project-darkerblue-color: #4494bb;
-	--project-grey-color: #e5e5e5;
-	--project-lightgrey-color: #f0f4f6;
-	--project-bordergrey-color: #a0a8b4;
-	--project-darkgrey-color: #646464;
+
+	-project-blue-color: #5cadd3;
+	-project-darkerblue-color: #4494bb;
+	-project-grey-color: #e5e5e5;
+	-project-lightgrey-color: #f0f4f6;
+	-project-bordergrey-color: #a0a8b4;
 	font-size: 62.5%;
 	/* 1 rem =10px */
-	margin: 0;
-	padding: 0;
+
 }
 
 /* --- spécifications des polices ---*/
