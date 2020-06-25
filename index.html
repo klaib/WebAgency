@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,11 +8,12 @@
 		<link href="./fonts/css/all.css" rel="stylesheet" />
 		<link rel="stylesheet" href="index.css" />
 
-		<link
-			rel="stylesheet"
-			media="screen  and (max-width:480px)"
-			href="to_480px.css"
-		/>
+		<link rel="stylesheet" media="screen  and (max-width:480px)" href="to_480px.css" />
+		<!-- <link
+		rel="stylesheet"
+		media="screen  and (min-width:481px)"
+		href="from_481px.css"
+	/> -->
 
 		<!-- <link
 			rel="stylesheet"
@@ -39,10 +41,7 @@
 			<section>
 				<figure id="slider">
 					<img src="images/fillette_creative.jpg" alt="image de fillette" />
-					<img
-						src="images/garcon_audible.jpg"
-						alt="image de garçon megaphone"
-					/>
+					<img src="images/garcon_audible.jpg" alt="image de garçon megaphone" />
 					<div id="bluebar"></div>
 				</figure>
 				<figcaption id="slidertext">
@@ -71,12 +70,8 @@
 				après-vente disponible.
 			</p>
 			<div id="services_core">
-				<img
-					id="monitor"
-					src="images/Nos_services/main-feature.png"
-					alt="image
-                moniteurmac"
-				/>
+				<img id="monitor" src="images/Nos_services/main-feature.png" alt="image
+                moniteurmac" />
 				<ul id="services_list">
 					<li>
 						<i class="fas fa-cubes"></i>
@@ -229,19 +224,12 @@
 		</section>
 		<!-- page des Contacts  commence ici  -->
 		<section id="contact">
-			<div class="iframe">
+			<div class="iframe_background">
 				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221424607966!2d2.3476369149521474!3d48.873055307629265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1561980954531!5m2!1sfr!2sfr"
-				></iframe>
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221424607966!2d2.3476369149521474!3d48.873055307629265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1561980954531!5m2!1sfr!2sfr"></iframe>
 			</div>
-
-			<form
-				id="contact-box-form"
-				method="get"
-				action="/contact_page.php"
-				target="myframe"
-			>
-				<div id="contact_part1">
+			<form id="contact-box-form" method="get" action="/contact_page.php" target="myframe">
+				<div id="angency_info" >
 					<h3>Contact info</h3>
 					<p>
 						<span> Webagency SAS</span><br />
@@ -249,25 +237,21 @@
 						Tel : 01 02 03 04 05
 					</p>
 				</div>
-				<div id="contact_part2"><input type="text" name="nom" placeholder="Votre Nom" />
-					<input type="email" name="email" placeholder="Votre email" /><br />
+				<div id="input_area" >
+					<div id="contact_part1"><input type="text" name="nom" placeholder="Votre Nom" />
+						<input type="email" name="email" placeholder="Votre email" /><br />
 
-					<input type="text" name="sujet" placeholder="Sujet" /><br />
+						<input type="text" name="sujet" placeholder="Sujet" /><br />
+					</div>
+
+					<div id="contact_part2">
+						<textarea name="message" id="message" placeholder="Tapez Votre message ici"></textarea><br />
+						<input class="btn" type="submit" value="Envoyer le message" /><br />
+					</div>
 				</div>
-				
-				<div id="contact_part3"> 
-					<textarea
-					name="message"
-					id="message"
-					placeholder="Tapez Votre message ici"
-					></textarea><br />
-					<input class="btn" type="submit" value="Envoyer le message" /><br />
-				</div>
-					
-				
-		
-				</form>
+			</form>
 			</form>
 		</section>
 	</body>
+
 </html>

@@ -8,6 +8,7 @@ body {
 	overflow-x: hidden;
 }
 
+
 #page1,
 .page {
 	height: 100vh;
@@ -432,7 +433,7 @@ iframe {
 	opacity: 0.8;
 }
 
-.iframe {
+.iframe_background {
 	margin-top: 50px;
 	width: 100%;
 	background-color: var(--project-blue-color);
@@ -483,15 +484,6 @@ textarea {
 form textarea {
 	height: 20rem;
 }
-
-/* 
-form input,
-textarea {
-	border: 0.1rem solid var(--project-bordergrey-color);
-	margin: 1rem;
-	padding: 1rem;
-	border-radius: 0.5rem;
-} */
 
 form .btn {
 	width: max-content;
