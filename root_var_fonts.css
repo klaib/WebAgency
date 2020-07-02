@@ -11,6 +11,9 @@
 	font-size: 62.5%;
 	/* 1 rem =10px */
 
+	overflow-x: hidden;
+	/* règle un overflow qui ne répondait depuis "body" */
+
 }
 
 /* --- spécifications des polices ---*/

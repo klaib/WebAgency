@@ -5,8 +5,10 @@ body {
 	font-family: "RobotoMedium", sans-serif;
 	font-size: 160%;
 	width: 100%;
-	overflow-x: hidden;
+
 }
+
+background: red;
 
 
 #page1,
