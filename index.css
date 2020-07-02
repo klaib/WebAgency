@@ -20,7 +20,7 @@ body {
 
 p {
 	font-size: 1.6rem;
-	color: var(--project-darkgrey-color);
+	color: #717479;
 }
 
 header {
@@ -68,7 +68,7 @@ nav li {
 
 nav a {
 	font-size: 1.4rem;
-	color: var(--project-darkgrey-color);
+	color: #717479;
 	padding-top: 3rem;
 	padding-bottom: 0.3rem;
 	text-decoration: none;
@@ -76,7 +76,7 @@ nav a {
 
 nav a:hover {
 	border-top: 0.3rem solid;
-	border-top-color: var(--project-blue-color);
+	border-top-color: #5cadd3;
 }
 
 section {
@@ -113,8 +113,8 @@ section {
 }
 
 #slidertext a {
-	background: var(--project-blue-color);
-	border-bottom: 0.3rem solid var(--project-darkerblue-color);
+	background: #5cadd3;
+	border-bottom: 0.3rem solid #4494bb;
 	border-radius: 0.3rem;
 	padding: 1rem;
 	font-size: 1.5rem;
@@ -133,20 +133,20 @@ section {
 	position: absolute;
 	bottom: 0;
 	width: 0%;
-	background-color: var(--project-blue-color);
+	background-color: #5cadd3;
 	height: 1%;
 	animation: progressbar 15s infinite ease-in-out;
 }
 
 #agencyname {
-	color: var(--project-blue-color);
+	color: #5cadd3;
 }
 
 .fa-chevron {
 	position: absolute;
 	top: calc(0.46 * (100% - 10rem) + 10rem);
 	font-size: 1.9rem;
-	background-color: var(--project-darkgrey-color);
+	background-color: #717479;
 	color: white;
 }
 
@@ -205,7 +205,7 @@ section {
 hr {
 	display: inline-block;
 	width: 15%;
-	color: var(--project-grey-color);
+	color: #e5e5e5;
 }
 
 h2 {
@@ -237,7 +237,7 @@ ul #services_list {
 
 .fa-circle {
 	position: relative;
-	color: var(--project-blue-color);
+	color: #5cadd3;
 	font-size: 1.3rem;
 	border-radius: 50%;
 	padding: 0.5rem;
@@ -266,10 +266,10 @@ ul #services_list {
 	position: relative;
 	top: 7.6rem;
 	left: -7.5rem;
-	border: 0.1rem solid var(--project-grey-color);
+	border: 0.1rem solid #e5e5e5;
 	border-radius: 50%;
 	padding: 1.6rem 1.5rem 1.6rem 1.5rem;
-	color: var(--project-blue-color);
+	color: #5cadd3;
 	font-size: 2.8rem;
 }
 
@@ -307,17 +307,17 @@ ul #services_list {
 	position: relative;
 	padding: 1rem 0.5rem 1rem 0.5rem;
 	font-size: 1.6rem;
-	background-color: var(--project-grey-color);
-	color: var(--project-darkgrey-color);
+	background-color: #e5e5e5;
+	color: #717479;
 	height: 2rem;
-	border-bottom: 0.3rem solid var(--project-grey-color);
+	border-bottom: 0.3rem solid #e5e5e5;
 }
 
 #projectselect li:first-of-type {
 	border-radius: 0.5rem 0 0 0.5rem;
 	color: white;
-	background-color: var(--project-blue-color);
-	border-bottom: 0.3rem solid var(--project-darkerblue-color);
+	background-color: #5cadd3;
+	border-bottom: 0.3rem solid #4494bb;
 }
 
 #projectselect li:last-of-type {
@@ -325,8 +325,8 @@ ul #services_list {
 }
 
 #projectselect li:hover {
-	background-color: var(--project-blue-color);
-	border-bottom: 0.3rem solid var(--project-darkerblue-color);
+	background-color: #5cadd3;
+	border-bottom: 0.3rem solid #4494bb;
 	color: white;
 }
 
@@ -342,7 +342,7 @@ ul #services_list {
 	height: 0;
 	border-style: solid;
 	border-width: 1.5rem 0.75rem 0 0.75rem;
-	border-color: var(--project-darkerblue-color) transparent;
+	border-color: #4494bb transparent;
 }
 
 .triangle {
@@ -354,7 +354,7 @@ ul #services_list {
 	height: 0;
 	border-style: solid;
 	border-width: 1.5rem 0.75rem 0 0.75rem;
-	border-color: var(--project-darkerblue-color) transparent;
+	border-color: #4494bb transparent;
 }
 
 #projectdisplay {
@@ -394,7 +394,7 @@ ul #services_list {
 	top: 65%;
 	left: 0;
 	padding: 1% 3%;
-	background: var(--project-darkgrey-color);
+	background: #717479;
 }
 
 #projectdisplay li:hover figcaption {
@@ -412,7 +412,7 @@ ul #services_list {
 	border: 0.1rem solid white;
 	border-radius: 50%;
 	padding: 0.7rem 0.7rem 0.6rem 0.7rem;
-	background: var(--project-blue-color);
+	background: #5cadd3;
 	z-index: 2;
 }
 
@@ -436,14 +436,14 @@ iframe {
 .iframe_background {
 	margin-top: 50px;
 	width: 100%;
-	background-color: var(--project-blue-color);
+	background-color: #5cadd3;
 }
 
 /* .iframe {
 	margin-top: 50px;
 	width: 100%;
 
-	background-color: var(--project-blue-color);
+	background-color: #5cadd3;
 } */
 
 #contact-box-form {
@@ -456,7 +456,7 @@ iframe {
 
 	display: flex;
 	flex-flow: column nowrap;
-	background: var(--project-lightgrey-color);
+	background: #f0f4f6;
 	opacity: 0.8;
 	z-index: 2;
 }
@@ -468,12 +468,12 @@ iframe {
 
 #contact-box-form span {
 	font-weight: 900;
-	color: var(--project-darkgrey-color);
+	color: #717479;
 }
 
 form input,
 textarea {
-	border: 0.1rem solid var(--project-bordergrey-color);
+	border: 0.1rem solid #a0a8b4;
 	padding: 1rem;
 	border-radius: 0.5rem;
 	margin-bottom: 1.5rem;
@@ -491,8 +491,8 @@ form .btn {
 	border-radius: 0.5rem;
 	color: white;
 	font-weight: 900;
-	background: var(--project-blue-color);
-	border-bottom: 0.3rem solid var(--project-darkerblue-color);
+	background: #5cadd3;
+	border-bottom: 0.3rem solid #4494bb;
 }
 
 form .btn:hover {
