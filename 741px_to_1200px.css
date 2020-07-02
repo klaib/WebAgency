@@ -1,0 +1,19 @@
+:root {
+
+
+	font-size: 50%;
+	/* 1 rem =8px */
+
+
+}
+
+
+#slidertext {
+
+	max-width: 60%;
+}
+
+
+#slidertext p {
+	font-size: 1.4rem;
+}

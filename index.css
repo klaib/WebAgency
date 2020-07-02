@@ -5,10 +5,9 @@ body {
 	font-family: "RobotoMedium", sans-serif;
 	font-size: 160%;
 	width: 100%;
+	overflow-x: hidden;
 
 }
-
-background: red;
 
 
 #page1,
@@ -42,6 +41,7 @@ header {
 header img {
 	object-fit: scale-down;
 	max-width: 20%;
+	min-width: 160px;
 	padding: 4rem 0rem 4rem 8rem;
 }
 
@@ -59,7 +59,7 @@ ul {
 
 nav ul {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	padding: 0.8rem;
 }
 
@@ -107,7 +107,7 @@ section {
 	left: 7%;
 	color: white;
 	max-width: 40%;
-	min-width: 300px;
+	/* min-width: 300px; */
 }
 
 #slidertext h1 {
@@ -289,7 +289,7 @@ ul #services_list {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	padding-top: 10rem;
 }
 
@@ -390,7 +390,7 @@ ul #services_list {
 	opacity: 0;
 	justify-content: center;
 	color: white;
-	height: 33%;
+	height: 32%;
 	width: 94%;
 
 	top: 65%;
@@ -455,6 +455,7 @@ iframe {
 	height: max-content;
 
 	width: 20%;
+	min-width: 24rem;
 
 	display: flex;
 	flex-flow: column nowrap;
