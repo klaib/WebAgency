@@ -1,9 +1,3 @@
-/* body {
-    display: flex;
-    flex-flow: column;
-} */
-
-
 #page1 {
     height: 710px;
 }
@@ -65,7 +59,8 @@ h1 {
 
 
 #slidertext {
-    top: 35%;
+    min-width: 80%;
+    top: 45%;
 }
 
 .fa-chevron {
@@ -179,7 +174,7 @@ h3 {
     left: -9.3rem;
 }
 
-/* les services finnissent ici /
+/* les services finissent ici /
 
 /* les projets commencent ici /
 /**/
@@ -249,7 +244,7 @@ h3 {
     left: 75%;
 }
 
-/* les projets finnissent ici /
+/* les projets finissent ici /
 
 /* les  contacts ici */
 
