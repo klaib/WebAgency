@@ -19,7 +19,7 @@ header img {
 nav {
     max-width: 20rem;
     /* min-height: 15rem; */
-    padding: 0 8% 0 15%;
+    padding: 0 5% 0 18%;
 }
 
 /* Navigation Accueil*/
@@ -48,7 +48,7 @@ nav a {
 #slider {
     padding-top: 20rem;
     width: 600%;
-    animation: 15s slides infinite ease-in-out;
+    /* animation: 15s slides infinite ease-in-out; */
 }
 
 h1 {
@@ -64,13 +64,26 @@ h1 {
     top: calc(0.46 * (100% - 20rem) + 20rem);
 }
 
+
 @keyframes slides {
     0% {
         left: -150%;
     }
 
-    50% {
+    2.5% {
+        left: -150%;
+    }
+
+    47.5% {
         left: -475%;
+    }
+
+    52.5% {
+        left: -475%;
+    }
+
+    97.5% {
+        left: -150%;
     }
 
     100% {
@@ -83,14 +96,28 @@ h1 {
         width: 25%;
     }
 
-    50% {
+    2.5% {
+        width: 25;
+    }
+
+    47.5% {
         width: 96%;
+    }
+
+    52.5% {
+        width: 96%;
+    }
+
+
+    97.5% {
+        width: 25%;
     }
 
     100% {
         width: 25%;
     }
 }
+
 
 /* fin de la pge d'acceuil  */
 
